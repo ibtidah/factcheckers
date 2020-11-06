@@ -62,9 +62,12 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'factcheckers.pipelines.FactcheckersPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    #'factcheckers.pipelines.FactcheckersPipeline': 300,
+    'scrapy.pipelines.images.ImagesPipeline': 1,
+}
+
+IMAGES_STORE = '/Users/tallaljaved/Code/factcheckers/images'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
