@@ -3,7 +3,7 @@ import requests
 import mimetypes
 
 class QuotesSpider(scrapy.Spider):
-    name = "AFPPaksitan"
+    name = "AFPPakistan"
 
     def start_requests(self):
         urls = ['https://factcheck.afp.com/afp-pakistan?page=0']
